@@ -24,18 +24,28 @@ Reference link: [Analytics Vidhya DataHack](https://datahack.analyticsvidhya.com
 
 ## Key deliverables
 - To develop a useful forecasting dashboard using suitable open-source tools showcasing data insights and model predictions.
+- To experiment and evaluate various time series model in answering the problem statement.
 
-## Challenges
+# Sample dashboard pages
+![Dashboard](img/sample_dashboard.png)
 
-The team has encountered some technical challenges in getting LSTM and Transformer models to work on the above problem statement while ensuring the delivery of project within tight deadline. As a result only SARIMA model was successfully experimented.
+![Datasets](img/sample_dataset_display.png)
+# Results
 
-## Results
-- The frontend forecasting dashboard was successfully implemented using Python streamlit library.
+We evaluated the performance of three different models: SARIMA, LSTM RNN, and Transformer, on a given time series dataset. The table below shows the RMSE values obtained for each model:
 
-## Current status:
+| Model      | RMSE   |
+|------------|--------|
+| SARIMA     | 95,951  |
+| LSTM RNN   | 96,430  |
+| Transformer| 86,509  |
+
+Based on these results, we observe that the Transformer model performed the best, with the lowest RMSE value of 95,555.
+
+# Current development status
 - Not in active development since Apr 2023.
 
-# Setup
+# Setup and Usage
 To run the streamlit service, please clone this repository and install the necessary dependences as provided by environment.yml (using Anaconda distribution) or requirements.txt (Python pip package installer) using either of the following command:
 
 Via Anaconda distribution:
@@ -52,22 +62,21 @@ pip install -r requirements.txt
 
 ```
 
-## Special folders.
-
-- Pkl files should be placed in corresponding subfolders (Statistical Model/Machine Learning/Deep Learning) under `models` folder.
-
-**Please note that only statistical model involving SARIMA is available on the Google Drive link above due to space constraint.**
-
-## Usage
-
 Assuming the necessary dependences has been installed. Please execute the following script to start the streamlit service.
 
 For Windows users: Please run the script `start_streamlit.bat` to start Streamlit service.
 
 For Linux users: Please execute .sh script is developed for Linux users, but not testing has been done. (**Note: This script is added for convenience but has yet to test out on actual machine.**)
 
-## EDA works
-### Basic EDA:
+## Special folders.
+
+- Pkl files should be placed in corresponding subfolders (Statistical Model/Machine Learning/Deep Learning) under `models` folder.
+
+**Please note that only statistical model involving SARIMA is available on the Google Drive link above due to space constraint.**
+
+# EDA works
+
+## Basic EDA:
 - ![Data](img/data.jpg) 
     - Our data has 456548 row and 15 columns.
     - Our target is “num_orders” and timestamp is in weeks 
@@ -162,17 +171,6 @@ In our case, the model does not use any BatchNorm layer, but it does use dropout
 Disabling the dropout layer would effectively disable positional encoding, resulting in constant predicted values. To generate non-constant predicted values, the model is not switched to evaluation mode, and instead a random seed is set to ensure consistency in the predictions. However, the model seems to be underfitting as the predicted values fall within a narrow range, as compared to the actual values which have a much larger range. 
 
 ![Predicted vs Actual results](img/transformer_prediction.png)
-
-## Comparing RMSE Across Different Models
-We evaluated the performance of three different models: SARIMA, LSTM RNN, and Transformer, on a given time series dataset. The table below shows the RMSE values obtained for each model:
-
-| Model      | RMSE   |
-|------------|--------|
-| SARIMA     | 95,951  |
-| LSTM RNN   | 96,430  |
-| Transformer| 86,509  |
-
-Based on these results, we observe that the Transformer model performed the best, with the lowest RMSE value of 95,555.
 
 ## Future Improvement 
 - To further improve the performance of the **SARIMA model**, we can explore hyperparameter tuning techniques. This can involve changing the values of the SARIMA model's order and seasonal_order parameters, or using more advanced techniques such as grid search or Bayesian optimization. Hyperparameter tuning can help us find the optimal set of hyperparameters that can improve the model's performance on the test set.
