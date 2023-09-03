@@ -67,9 +67,6 @@ For Windows users: Please run the script `start_streamlit.bat` to start Streamli
 For Linux users: Please execute .sh script is developed for Linux users, but not testing has been done. (**Note: This script is added for convenience but has yet to test out on actual machine.**)
 
 ## EDA works
-
-# EDA and Data Propressing
-## EDA and Data Propressing
 ### Basic EDA:
 - ![Data](img/data.jpg) 
     - Our data has 456548 row and 15 columns.
