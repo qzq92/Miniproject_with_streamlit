@@ -23,8 +23,7 @@ Reference link: [Analytics Vidhya DataHack](https://datahack.analyticsvidhya.com
 
 
 ## Key deliverables
-- The team has tried 3 different models (SARIMA, LSTM and Transformer) to predict the demand for the next 10 weeks as required by the problem statement. 
-- To develop a useful forecasting dashboard using suitable open-source tools for showcase and sharing with other apprentices.
+- To develop a useful forecasting dashboard using suitable open-source tools showcasing data insights and model predictions.
 
 ## Challenges
 
@@ -53,13 +52,9 @@ pip install -r requirements.txt
 
 ```
 
-## Additional stuff to download and place in repository.
+## Special folders.
 
-Please download `models` and `data` folder from the following link: 
-- [data](https://drive.google.com/drive/folders/15bCjCil9vwmI8UCLJdTV84UFZQpPjS61?usp=sharing)
-- [models](https://drive.google.com/drive/folders/1U7rj5-p0SWyaZq4-IxWF58ZUHLiGUmlh?usp=sharing)
-
-Place both folders it in the repo folder directly when cloned into directory.
+- Pkl files should be placed in corresponding subfolders (Statistical Model/Machine Learning/Deep Learning) under `models` folder.
 
 **Please note that only statistical model involving SARIMA is available on the Google Drive link above due to space constraint.**
 
