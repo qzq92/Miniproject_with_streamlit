@@ -1,0 +1,37 @@
+# Ref https://docs.streamlit.io/library/advanced-features/configuration?ref=blog.streamlit.io#set-configuration-options
+
+[theme]
+# The preset Streamlit theme that your custom theme inherits from. One of "light" or "dark".
+base="dark"
+
+# Primary accent color for interactive element
+primaryColor="#bd93f9"
+
+# Background color for the main content area.
+backgroundColor="#282a36"
+
+# Background color used for the sidebar and most interactive widgets.
+secondaryBackgroundColor="#44475a"
+
+# Color used for almost all text.
+textColor="#f8f8f2"
+
+# Font family for all text in the app, except code blocks. One of "sans serif", "serif", or "monospace".
+# font = "sans serif"
+
+
+[browser]
+
+# Internet address where users should point their browsers in order to connect to the app. Can be IP address or DNS name and path.
+# This is used to: - Set the correct URL for CORS and XSRF protection purposes. - Show the URL on the terminal - Open the browser
+# Default: 'localhost'
+serverAddress = "localhost"
+
+# Whether to send usage statistics to Streamlit.
+# Default: true
+gatherUsageStats = false
+
+# Port where users should point their browsers in order to connect to the app.
+# This is used to: - Set the correct URL for CORS and XSRF protection purposes. - Show the URL on the terminal - Open the browser
+# Default: whatever value is set in server.port.
+serverPort = 8501
