@@ -26,7 +26,7 @@ Reference link: [Analytics Vidhya DataHack](https://datahack.analyticsvidhya.com
 - To develop a useful forecasting dashboard using suitable open-source tools showcasing data insights and model predictions.
 - To experiment and evaluate various time series model in answering the problem statement.
 
-# Sample dashboard pages
+## Sample dashboard pages
 ![Dashboard](img/sample_dashboard.png)
 
 ![Datasets](img/sample_dataset_display.png)
