@@ -1,4 +1,4 @@
-# About repository
+# About repository 
 This repository is for the 5-day AI Singapore Batch 12 Apprenticeship Programme mini project which is jointly contributed by the following apprentices:
 
 - Goh Jong Ching
